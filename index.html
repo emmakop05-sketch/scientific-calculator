@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Max Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <div class="top">
+        <span id="mode">DEG</span>
+        <button onclick="toggleMode()">RAD</button>
+    </div>
+
+    <input type="text" id="screen" placeholder="0">
+
+    <div class="buttons">
+
+        <button onclick="press('AC')">AC</button>
+        <button onclick="press('DEL')">DEL</button>
+        <button onclick="press('(')">(</button>
+        <button onclick="press(')')">)</button>
+
+        <button onclick="press('sin(')">sin</button>
+        <button onclick="press('cos(')">cos</button>
+        <button onclick="press('tan(')">tan</button>
+        <button onclick="press('/')">÷</button>
+
+        <button onclick="press('log(')">log</button>
+        <button onclick="press('ln(')">ln</button>
+        <button onclick="press('√(')">√</button>
+        <button onclick="press('*')">×</button>
+
+        <button onclick="press('π')">π</button>
+        <button onclick="press('e')">e</button>
+        <button onclick="press('^')">xʸ</button>
+        <button onclick="press('-')">−</button>
+
+        <button onclick="press('!')">x!</button>
+        <button onclick="press('%')">%</button>
+        <button onclick="press('.')">.</button>
+        <button onclick="press('+')">+</button>
+
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+
+        <button class="zero" onclick="press('0')">0</button>
+        <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
